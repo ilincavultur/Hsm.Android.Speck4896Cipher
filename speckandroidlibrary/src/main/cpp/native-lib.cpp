@@ -57,7 +57,7 @@ Java_com_example_speckandroidlibrary_SpeckCipher_encrypt(
     }
 
     // Call the platform-independent speck_encrypt function
-    char *ciphertext = speck_encrypt(plaintextHex, keyHex);
+    char *ciphertext = speck_encrypt(plaintextHex, processedKeyHex);
 
     // Release the Java string memory used for input
     releaseCString(env, plaintext, plaintextHex);
@@ -94,7 +94,7 @@ Java_com_example_speckandroidlibrary_SpeckCipher_decrypt(
     }
 
     // Call the platform-independent speck_decrypt function
-    char *plaintext = speck_decrypt(ciphertextHex, keyHex);
+    char *plaintext = speck_decrypt(ciphertextHex, processedKeyHex);
 
     // Release the Java string memory used for input
     releaseCString(env, ciphertext, ciphertextHex);
