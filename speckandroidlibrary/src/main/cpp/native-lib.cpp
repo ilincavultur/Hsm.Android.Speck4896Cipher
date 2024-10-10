@@ -31,7 +31,7 @@ char *handleKey(const char *keyHex) {
         key96[24] = '\0';  // Null-terminate the string
         return key96;
     } else {
-        // Invalid key length, return NULL to indicate an error
+        // Invalid key length, return nullptr to indicate an error
         return nullptr;
     }
 }
