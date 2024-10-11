@@ -24,7 +24,7 @@ and:
 
 ```gradle
 dependencies {
-    implementation("com.github.ilincavultur:speck_android_48_96:{latest version}")
+    implementation("com.github.ilincavultur:Hsm.Android.Speck4896Cipher:{latest version}")
 }
 ```
 
