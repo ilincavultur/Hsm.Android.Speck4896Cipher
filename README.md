@@ -2,10 +2,13 @@
 
 [![](https://jitpack.io/v/ilincavultur/speck_android_48_96.svg)](https://jitpack.io/#ilincavultur/speck_android_48_96)
 
+This project includes third-party code from the Simon_Speck_Ciphers
+ by Calvin McCoy, which is licensed under the The MIT License (MIT).
+The full license text for this code can be found at:
+[LICENSE.md](https://github.com/inmcm/Simon_Speck_Ciphers/blob/master/LICENSE.md)
+
 This library acts as a bridge between the C code that is written to implement the Speck Cipher and Kotlin.
 It uses JNI.
-
-The Speck Cipher implementation is taken from: https://github.com/inmcm/Simon_Speck_Ciphers
 
 Add it to your build.gradle.kts with:
 ```gradle
