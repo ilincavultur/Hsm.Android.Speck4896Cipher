@@ -1,3 +1,11 @@
+/*
+ * Speck.h
+ * Implementation of NSA Speck Block Cipher
+ * Copyright 2017 Michael Calvin McCoy
+ * calvin.mccoy@gmail.com
+ *  # The MIT License (MIT) - see LICENSE.md see LICENSE.md
+*/
+
 #ifndef SPECK_H
 #define SPECK_H
 

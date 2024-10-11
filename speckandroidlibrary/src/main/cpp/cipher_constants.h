@@ -1,4 +1,11 @@
-// cipher_constants.h
+/*
+ * cipher_constants.h
+ * Implementation of NSA Speck Block Cipher
+ * Copyright 2017 Michael Calvin McCoy
+ * calvin.mccoy@gmail.com
+ *  # The MIT License (MIT) - see LICENSE.md see LICENSE.md
+*/
+
 #ifndef CIPHER_CONSTANTS_H
 #define CIPHER_CONSTANTS_H
 
