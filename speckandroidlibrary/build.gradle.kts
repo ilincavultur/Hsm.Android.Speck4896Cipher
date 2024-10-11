@@ -52,7 +52,7 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.github.hsm.digital.android"
+            groupId = "com.github.ilincavultur"
             artifactId = "speck4896cipher"
             version = "1.0.0"
 
