@@ -1,4 +1,4 @@
-# speck_android_48_96
+# Hsm.Android.Speck4896Cipher
 
 [![](https://jitpack.io/v/ilincavultur/speck_android_48_96.svg)](https://jitpack.io/#ilincavultur/speck_android_48_96)
 
