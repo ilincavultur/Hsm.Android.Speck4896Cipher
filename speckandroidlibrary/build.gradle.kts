@@ -52,9 +52,9 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.github.ilincavultur"
-            artifactId = "speckandroidlibrary"
-            version = "1.0"
+            groupId = "hsm.digital.android"
+            artifactId = "speck4896cipher"
+            version = "1.0.0"
 
             afterEvaluate {
                 from(components["release"])
