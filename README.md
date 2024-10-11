@@ -5,8 +5,6 @@
 This library acts as a bridge between the C code that is written to implement the Speck Cipher and Kotlin.
 It uses JNI.
 
-[https://jitpack.io/#jitpack/android-example](https://jitpack.io/#ilincavultur/speck_android_48_96)
-
 The Speck Cipher implementation is taken from: https://github.com/inmcm/Simon_Speck_Ciphers
 
 Add it to your build.gradle.kts with:
