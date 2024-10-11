@@ -1,6 +1,6 @@
 # Hsm.Android.Speck4896Cipher
 
-[![](https://jitpack.io/v/ilincavultur/speck_android_48_96.svg)](https://jitpack.io/#ilincavultur/speck_android_48_96)
+[![](https://jitpack.io/v/ilincavultur/Hsm.Android.Speck4896Cipher.svg)](https://jitpack.io/#ilincavultur/Hsm.Android.Speck4896Cipher)
 
 This project includes third-party code from the Simon_Speck_Ciphers
  by Calvin McCoy, which is licensed under the The MIT License (MIT).
