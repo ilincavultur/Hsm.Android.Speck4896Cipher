@@ -32,11 +32,17 @@ Usage in code:
 
 ```kotlin
 val plaintext = "01 02 03 04 05 06".replace(" ", "") // 6 bytes for Speck 96/48
+// or val plaintext = "01 02 03 04 05 06"
+
 val key =
     "00 00 00 00 00 00 00 00 00 00 00 00".replace(" ", "") // 12 bytes for Speck 96/48
+// or val key =
+   // "00 00 00 00 00 00 00 00 00 00 00 00"
+// or val key =
+   // "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
 
 val encryptedData = SpeckCipher.encrypt(plaintext, key)
-val decryptedData = SpeckCipher.decrypt(encryptedData.replace(" ", ""), key)
+val decryptedData = SpeckCipher.decrypt(encryptedData, key)
 ```
 
 Examples to test - all values are represented as hex:
