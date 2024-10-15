@@ -307,4 +307,44 @@ class SpeckInstrumentedTest {
         Assert.assertEquals(expectedResult, encryptedData)
     }
 
+    // Invalid Inputs
+
+    @Test
+    fun encryptData_plaintextNotValidOneKey_ReturnsError() {
+        val expectedResult = "Error: Invalid input format."
+        val encryptedData = encrypt("01 02 03 04 05 0", key1)
+
+        Assert.assertEquals(expectedResult, encryptedData)
+    }
+
+    @Test
+    fun decryptData_plaintextNotValidOneKey_ReturnsError() {
+        val expectedResult = "Error: Invalid input format."
+        val decryptedData = decrypt("01 02 03 04 05 0", key1)
+
+        Assert.assertEquals(expectedResult, decryptedData)
+    }
+
+    // Invalid Keys
+
+    @Test
+    fun encryptData_plaintextOneKeyNotValid_ReturnsError() {
+        val expectedResult = "Error: Invalid key size."
+        val invalidKey = "12345678"
+
+        val encryptedData = encrypt(plaintext1, invalidKey)
+
+        Assert.assertEquals(expectedResult, encryptedData)
+    }
+
+    @Test
+    fun decryptData_plaintextOneKeyNotValid_ReturnsError() {
+        val expectedResult = "Error: Invalid key size."
+        val invalidKey = "12345678"
+
+        val decryptedData = encrypt(plaintext1, invalidKey)
+
+        Assert.assertEquals(expectedResult, decryptedData)
+    }
+
 }

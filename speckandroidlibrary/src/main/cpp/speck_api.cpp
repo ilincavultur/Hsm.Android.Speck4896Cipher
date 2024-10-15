@@ -47,7 +47,7 @@ int hexToBytes(const char *hexString, uint8_t *byteArray, size_t byteArrayLength
 // Helper function to convert byte array to hex string (with spaces)
 char *bytesToHex(const uint8_t *byteArray, size_t byteArrayLength) {
     if (byteArray == nullptr || byteArrayLength == 0) {
-        return strdup(""); // Return an empty string if input is NULL or length is 0
+        return strdup("Error: Invalid input format."); // Return an error string if input is NULL or length is 0
     }
 
     size_t hexStringLength = byteArrayLength * 3;  // 2 hex digits + space per byte

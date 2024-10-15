@@ -74,7 +74,7 @@ Java_com_example_speckandroidlibrary_SpeckCipher_encrypt(
         // Release the Java string memory and return NULL in case of an invalid key size
         releaseCString(env, plaintext, plaintextHex);
         releaseCString(env, key, keyHex);
-        return nullptr;  // Return null if the key length is invalid
+        return env->NewStringUTF("Error: Invalid key size.");  // Return error string if the key length is invalid
     }
 
     // Encrypt
@@ -111,7 +111,7 @@ Java_com_example_speckandroidlibrary_SpeckCipher_decrypt(
         // Release the Java string memory and return NULL in case of an invalid key size
         releaseCString(env, ciphertext, ciphertextHex);
         releaseCString(env, key, keyHex);
-        return nullptr;  // Return null if the key length is invalid
+        return env->NewStringUTF("Error: Invalid key size.");  // Return error string if the key length is invalid
     }
 
     // Decrypt
