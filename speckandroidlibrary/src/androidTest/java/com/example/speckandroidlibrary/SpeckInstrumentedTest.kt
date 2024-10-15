@@ -1,6 +1,5 @@
 package com.example.speckandroidlibrary
 
-import androidx.test.platform.app.InstrumentationRegistry
 import com.example.speckandroidlibrary.SpeckCipher.decrypt
 import com.example.speckandroidlibrary.SpeckCipher.encrypt
 import org.junit.Assert
